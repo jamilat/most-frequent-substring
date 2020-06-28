@@ -1,16 +1,19 @@
+# Compilation and Running: python lab03.py
 #
-#Purpose:
+# Purpose:
 #  Determine the password of size N by:
 #  1) Isolating the substrings with N characters in the input string
 #  2) Then hashing the substrings
 #  3) Then counting the amount that hash to the same number
 #  4) Then getting the max count and undoing the hash so that you get the substring again
 #  and return the substring to be the password you are looking for
-#Parameters as input:
+#
+# Parameters as input:
 #  size of the password - int n - found on args[0]
 #  encoded message - String str - found on args[1]
-#Returns: None,
-#Examples:
+# Returns: None,
+#
+# Examples:
 #  n = 3
 #  str = bbbacbbbbacb
 #
@@ -26,32 +29,29 @@
 hashTable = []
 tableSz = 100
 
-
-#   Purpose: Make hashtable of size tableSz that's initiated with -1 at every index
+# Purpose: Make hashtable of size tableSz that's initiated with -1 at every index
 def makeHashTable():
     i = 0
     while (i < tableSz):
         hashTable.append(-1)
         i+=1
-def printDict(dict):
-    for key, value in dict.items():
-        print(key,":",value,",")
-#       Main method
+
+# Main method
 def main():
     l = input('Input password length:\n')
     s = input('Input string containing password:\n')
 
     print("\nYou entered:\npassword length:\t",l,"\nstring:\t\t",s)
 
-    #pass (aka substring) length
+    # pass in substring length
     pl = int(l)
 
-    #string length
+    # string length
     sl = len(s)
 
-    #Dict with:
-    #   Key - hash as an int
-    #   Value - count of how many instances
+    #Dictionary with:
+    #   Key : hash as an int
+    #   Value : count of how many instances
     ssInstanceDict = {}
 
     i = 0
@@ -70,8 +70,7 @@ def main():
             max = value
             maxK = key
     print("The password is:\t",maxK)
-    #   Print statement checking dict
-    #   printDict(ssInstanceDict)
+
 #Purpose:   Gets the substring of a specified length (passLength)
 #Returns:   String str - the substring
 #Params:    int iteration - the iteration of the Larger string you are at
