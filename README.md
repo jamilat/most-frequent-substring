@@ -22,12 +22,14 @@ python MazeSolver input_int input_String <br>
   <body>
   prints the password string
   </body>
+  
 <H2>Examples</H2>  
-  <body>Input:<br>
+  <body>
+  Input:<br>
   3
   baababacb
-  </body>
-  <H2>Output<br>
-  <body>
+ 
+  Output:<br>
   aba
+  
   </body>
