@@ -4,7 +4,7 @@
 A program written in Python as part of my Data Structures and Algorithms II class. This program receives a integer and String as command line input.<br>
 A password with size N can be found by searching the text for the most frequent substring with N characters.
 Given the size of the password and the encoded message, determine the password following the strategy
-given above. <br>
+given above. <br><br>
 To illustrate your task, consider the following example in which the password size is three (N= 3) and the text
 message is just ‘baababacb’. The password would then be ‘aba’, because this is the substring with size 3 that
 appears most often in the whole text (it appears twice) while the other six different substrings appear only once
