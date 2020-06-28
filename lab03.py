@@ -1,5 +1,7 @@
-# Compilation and Running: python lab03.py
+# Compilation and Running: python lab03.py int_password_size String_containing_password
 #
+#   int_password_size :             password size <= (length of String_containing_password)
+#   String_containing_password :    string containing the password of specified size
 # Purpose:
 #  Determine the password of size N by:
 #  1) Isolating the substrings with N characters in the input string
